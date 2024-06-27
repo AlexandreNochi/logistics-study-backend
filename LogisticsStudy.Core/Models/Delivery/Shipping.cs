@@ -12,5 +12,5 @@ public class Shipping
     public ShippingTypeEnum Type { get; set; }
     public DateTime ShippedDate { get; set; }
     public DateTime LastUpdateDate { get; set; }
-    public IList<Package> Packages { get; set; }
+    public ICollection<ShippingPackage> ShippingsPackage { get; set; }
 }

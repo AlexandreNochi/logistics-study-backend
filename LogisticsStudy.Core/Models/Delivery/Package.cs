@@ -18,6 +18,7 @@ public class Package
     public Address SenderAddress { get; set; }
     public Address ReceiverAddress { get; set; }
     public string TrackingCode { get; set; }
+    public ICollection<ShippingPackage> ShippingsPackage { get; set; }
     //public DateTime ExpectedDeliveryDate { get; set; }
     //public string CurrentLocation { get; set; }
 

@@ -12,6 +12,10 @@ public class PackageMap : IEntityTypeConfiguration<Package>
 
         builder.HasOne(x => x.ReceiverAddress);
 
+        builder.HasMany(x => x.ShippingsPackage)
+            .WithOne(sp => sp.Package)
+            .HasForeignKey(sp => sp.PackageId);
+
         builder.HasKey(x => x.Id);
 
         builder.Property(x => x.SKU)
