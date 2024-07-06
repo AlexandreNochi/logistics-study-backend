@@ -1,5 +1,5 @@
 namespace LogisticsStudy.Core.Enums;
-public enum InvoiceStatus
+public enum InvoiceStatusEnum
 {
     Issued = 1,
     InTransit = 2,
